@@ -4,7 +4,7 @@ variable "common_tags" {
 }
 
 variable "template" {
-  description = "Containing dureation and rules to run"
+  description = "Containing duration and rules to run"
   default = {
     duration = 3600
     rules_package_arns = [
