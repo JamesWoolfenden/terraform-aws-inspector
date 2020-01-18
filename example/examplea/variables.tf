@@ -21,3 +21,7 @@ variable "target_name" {
   default     = "Assessment-Target-All-Instances"
   description = "Assessment target name"
 }
+
+variable "template" {
+  description = "Containing duration and rules to run"
+}

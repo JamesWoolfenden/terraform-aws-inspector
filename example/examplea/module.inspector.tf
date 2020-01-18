@@ -5,4 +5,5 @@ module "inspector" {
   rule          = var.rule
   template_name = var.template_name
   target_name   = var.target_name
+  template      = var.template
 }
