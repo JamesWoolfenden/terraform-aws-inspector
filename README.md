@@ -3,6 +3,11 @@
 # terraform-aws-inspector [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-inspector/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-inspector) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-inspector.svg)](https://github.com/JamesWoolfenden/terraform-aws-inspector/releases/latest)
 
 Terraform module - see example for a basic implementation.
+You'll need to know the rules packages.
+
+```cli
+aws inspector list-rules-packages
+```
 
 ---
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).

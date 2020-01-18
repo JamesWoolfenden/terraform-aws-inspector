@@ -3,10 +3,6 @@ variable "common_tags" {
   type        = map
 }
 
-variable "template" {
-  description = "Containing duration and rules to run"
-}
-
 variable "group_arn" {
   type        = string
   description = "Contains a tagging map for instances"
@@ -26,3 +22,13 @@ variable "target_name" {
   type        = string
   description = "Assessment target name"
 }
+
+variable "duration" {
+  type=string
+}
+
+variable "package_arns" {
+  type=list
+}
+  
+

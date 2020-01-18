@@ -25,3 +25,7 @@ variable "target_name" {
 variable "template" {
   description = "Containing duration and rules to run"
 }
+
+variable "duration" {
+  type=string
+}
