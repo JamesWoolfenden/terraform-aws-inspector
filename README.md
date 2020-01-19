@@ -3,20 +3,16 @@
 # terraform-aws-inspector [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-inspector/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-inspector) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-inspector.svg)](https://github.com/JamesWoolfenden/terraform-aws-inspector/releases/latest)
 
 Terraform module - see example for a basic implementation.
-You'll need to know the rules packages.
-
-```cli
-aws inspector list-rules-packages
-```
+You'll need to know the rules packages, you want the example shows you how to set up a template that has all the basic rules.
 
 ---
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-These is just a basic illustration.
+For a basic illustration look at the example - **examplea**.
 
-Include this repository as a module in your existing terraform code:
+Include this repository as a module in your existing Terraform code as **module.inspector.tf**:
 
 ```terraform
 module "inspector" {
@@ -39,7 +35,6 @@ module "inspector" {
 | group\_arn | Contains a tagging map for instances | string | `""` | no |
 | rule | Event rule details | string | n/a | yes |
 | target\_name | Assessment target name | string | n/a | yes |
-| template | Containing duration and rules to run | map | `{ "duration": 3600, "rules_package_arns": [ "arn:aws:inspector:eu-west-1:357557129151:rulespackage/0-sJBhCr0F", "arn:aws:inspector:eu-west-1:357557129151:rulespackage/0-ubA5XvBh", "arn:aws:inspector:eu-west-1:357557129151:rulespackage/0-SPzU33xe", "arn:aws:inspector:eu-west-1:357557129151:rulespackage/0-SnojL3Z6" ] }` | no |
 | template\_name | Templates name | string | n/a | yes |
 
 ## Outputs
@@ -72,7 +67,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2019 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 
 ## License
 
@@ -116,15 +111,19 @@ under the License.
 [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-aws-inspector
 [share_email]: mailto:?subject=terraform-aws-inspector&body=https://github.com/JamesWoolfenden/terraform-aws-inspector
 
+
+### Notes
+For more details look athe AWS documentation here:
 <https://docs.aws.amazon.com/inspector/latest/userguide/inspector_slr.html>
 
+and here:
 <https://docs.aws.amazon.com/cli/latest/reference/inspector/index.html>
 
+
+Imports
 ```cli
 terraform import module.inspector.aws_inspector_assessment_target.target
-
 terraform import module.inspector.aws_inspector_assessment_target.target arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4
-
 terraform import module.inspector.aws_inspector_assessment_template.template arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4/template/0-HWzZC5g2
 
 aws inspector describe-assessment-targets --assessment-target-arns arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4
