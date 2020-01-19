@@ -27,5 +27,5 @@ variable "template" {
 }
 
 variable "duration" {
-  type=string
+  type = string
 }

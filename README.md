@@ -32,7 +32,9 @@ module "inspector" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | common\_tags | This is to help you add tags to your cloud objects | map | n/a | yes |
+| duration |  | string | n/a | yes |
 | group\_arn | Contains a tagging map for instances | string | `""` | no |
+| package\_arns |  | list | n/a | yes |
 | rule | Event rule details | string | n/a | yes |
 | target\_name | Assessment target name | string | n/a | yes |
 | template\_name | Templates name | string | n/a | yes |
@@ -111,16 +113,16 @@ under the License.
 [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-aws-inspector
 [share_email]: mailto:?subject=terraform-aws-inspector&body=https://github.com/JamesWoolfenden/terraform-aws-inspector
 
-
 ### Notes
+
 For more details look athe AWS documentation here:
 <https://docs.aws.amazon.com/inspector/latest/userguide/inspector_slr.html>
 
 and here:
 <https://docs.aws.amazon.com/cli/latest/reference/inspector/index.html>
 
-
 Imports
+
 ```cli
 terraform import module.inspector.aws_inspector_assessment_target.target
 terraform import module.inspector.aws_inspector_assessment_target.target arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4

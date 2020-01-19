@@ -24,11 +24,9 @@ variable "target_name" {
 }
 
 variable "duration" {
-  type=string
+  type = string
 }
 
 variable "package_arns" {
-  type=list
+  type = list
 }
-  
-
