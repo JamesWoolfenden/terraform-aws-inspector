@@ -124,17 +124,16 @@ and here:
 Imports
 
 ```cli
-terraform import module.inspector.aws_inspector_assessment_target.target
-terraform import module.inspector.aws_inspector_assessment_target.target arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4
-terraform import module.inspector.aws_inspector_assessment_template.template arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4/template/0-HWzZC5g2
+terraform import module.inspector.aws_inspector_assessment_target.target arn:aws:inspector:eu-west-1:xxxxxxxxx:target/0-WXdEI6N4
+terraform import module.inspector.aws_inspector_assessment_template.template arn:aws:inspector:eu-west-1:xxxxxxxxx:target/0-WXdEI6N4/template/0-HWzZC5g2
 
 aws inspector describe-assessment-targets --assessment-target-arns arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4
 {
     "assessmentTargets": [
         {
-            "arn": "arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4",
+            "arn": "arn:aws:inspector:eu-west-1:xxxxxxxxx:target/0-WXdEI6N4",
             "name": "Assessment-Target-All-Instances",
-            "resourceGroupArn": "arn:aws:inspector:eu-west-1:680235478471:resourcegroup/0-DIVXsGMP",
+            "resourceGroupArn": "arn:aws:inspector:eu-west-1:xxxxxxxxx:resourcegroup/0-DIVXsGMP",
             "createdAt": 1579347554.241,
             "updatedAt": 1579348640.217
         }
@@ -142,9 +141,8 @@ aws inspector describe-assessment-targets --assessment-target-arns arn:aws:inspe
     "failedItems": {}
 }
 
-aws inspector describe-assessment-templates --assessment-template-arns arn:aws:inspector:eu-west-1:680235478471:target/0-WXdEI6N4/template/0-HWzZC5g2
+aws inspector describe-assessment-templates --assessment-template-arns arn:aws:inspector:eu-west-1:xxxxxxxxx:target/0-WXdEI6N4/template/0-HWzZC5g2
 
 terraform import module.inspector.aws_cloudwatch_event_rule.inspector Amazon_Inspector_Assessment_0-HWzZC5g2_Id3mgqa
-
 terraform import  module.inspector.aws_cloudwatch_event_target.inspect Amazon_Inspector_Assessment_0-HWzZC5g2_Id3mgqa/0-WXdEI6N4/template/0-HWzZC5g2
 ```
