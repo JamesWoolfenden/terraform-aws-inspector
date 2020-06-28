@@ -32,32 +32,7 @@ module "inspector" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-## Providers
-
-| Name | Version |
-|------|---------|
-| aws | n/a |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
-| duration | n/a | `string` | n/a | yes |
-| group\_arn | Contains a tagging map for instances | `string` | `""` | no |
-| package\_arns | n/a | `list` | n/a | yes |
-| rule | Event rule details | `any` | n/a | yes |
-| target\_name | Assessment target name | `string` | n/a | yes |
-| template\_name | Templates name | `string` | n/a | yes |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| rule | n/a |
-| target | n/a |
-| template | n/a |
-
+Error: no lines in file
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -115,8 +90,8 @@ under the License.
 [logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
 [website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/company/slalom-consulting/
-[twitter]: https://twitter.com/Slalom
+[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
+[twitter]: https://twitter.com/JimWoolfenden
 
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-inspector&url=https://github.com/JamesWoolfenden/terraform-aws-inspector
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-inspector&url=https://github.com/JamesWoolfenden/terraform-aws-inspector
