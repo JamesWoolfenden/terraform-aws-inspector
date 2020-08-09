@@ -23,7 +23,7 @@ Include this repository as a module in your existing Terraform code as **module.
 ```terraform
 module "inspector" {
   source        = "JamesWoolfenden/inspector/aws"
-  version       = "0.0.2"
+  version       = "v0.0.11"
   common_tags   = var.common_tags
   group_arn     = aws_inspector_resource_group.group.arn
   rule          = var.rule
