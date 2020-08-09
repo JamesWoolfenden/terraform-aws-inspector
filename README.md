@@ -5,13 +5,14 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-inspector/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-inspector)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-inspector.svg)](https://github.com/JamesWoolfenden/terraform-aws-inspector/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module - see example for a basic implementation.
 You'll need to know the rules packages, you want the example shows you how to set up a template that has all the basic rules.
 
 ---
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
+![alt text](./diagram/inspector.png)
 
 ## Usage
 
@@ -32,7 +33,36 @@ module "inspector" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-Error: no lines in file
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| duration | n/a | `string` | n/a | yes |
+| group\_arn | Contains a tagging map for instances | `string` | `""` | no |
+| package\_arns | n/a | `list` | n/a | yes |
+| rule | Event rule details | `any` | n/a | yes |
+| target\_name | Assessment target name | `string` | n/a | yes |
+| template\_name | Templates name | `string` | n/a | yes |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| rule | n/a |
+| target | n/a |
+| template | n/a |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
