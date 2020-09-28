@@ -1,5 +1,3 @@
-[![Slalom][logo]](https://slalom.com)
-
 # terraform-aws-inspector
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-inspector/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-inspector)
@@ -11,6 +9,7 @@ Terraform module - see example for a basic implementation.
 You'll need to know the rules packages, you want the example shows you how to set up a template that has all the basic rules.
 
 ---
+
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 ![alt text](./diagram/inspector.png)
 
@@ -33,6 +32,7 @@ module "inspector" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
@@ -40,28 +40,28 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
-| aws | n/a |
+| ---- | ------- |
+| aws  | n/a     |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
-| duration | n/a | `string` | n/a | yes |
-| group\_arn | Contains a tagging map for instances | `string` | `""` | no |
-| package\_arns | n/a | `list` | n/a | yes |
-| rule | Event rule details | `any` | n/a | yes |
-| target\_name | Assessment target name | `string` | n/a | yes |
-| template\_name | Templates name | `string` | n/a | yes |
+| Name          | Description                                        | Type     | Default | Required |
+| ------------- | -------------------------------------------------- | -------- | ------- | :------: |
+| common_tags   | This is to help you add tags to your cloud objects | `map`    | n/a     |   yes    |
+| duration      | n/a                                                | `string` | n/a     |   yes    |
+| group_arn     | Contains a tagging map for instances               | `string` | `""`    |    no    |
+| package_arns  | n/a                                                | `list`   | n/a     |   yes    |
+| rule          | Event rule details                                 | `any`    | n/a     |   yes    |
+| target_name   | Assessment target name                             | `string` | n/a     |   yes    |
+| template_name | Templates name                                     | `string` | n/a     |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| rule | n/a |
-| target | n/a |
-| template | n/a |
+| Name     | Description |
+| -------- | ----------- |
+| rule     | n/a         |
+| target   | n/a         |
+| template | n/a         |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -85,7 +85,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 James Woolfenden
 
 ## License
 
@@ -94,35 +94,31 @@ Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 See [LICENSE](LICENSE) for full details.
 
 Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
+or more contributor license agreements. See the NOTICE file
 distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
+regarding copyright ownership. The ASF licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
+with the License. You may obtain a copy of the License at
 
 <https://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
+KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 
 ### Contributors
 
-  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
+[![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
 
-  [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
-  [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-
-[logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
-[website]: https://slalom.com
+[jameswoolfenden_homepage]: https://github.com/jameswoolfenden
+[jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
 [github]: https://github.com/jameswoolfenden
 [linkedin]: https://www.linkedin.com/in/jameswoolfenden/
 [twitter]: https://twitter.com/JimWoolfenden
-
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-inspector&url=https://github.com/JamesWoolfenden/terraform-aws-inspector
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-inspector&url=https://github.com/JamesWoolfenden/terraform-aws-inspector
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-aws-inspector
