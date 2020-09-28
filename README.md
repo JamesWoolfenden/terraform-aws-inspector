@@ -32,7 +32,6 @@ module "inspector" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -40,28 +39,28 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name          | Description                                        | Type     | Default | Required |
-| ------------- | -------------------------------------------------- | -------- | ------- | :------: |
-| common_tags   | This is to help you add tags to your cloud objects | `map`    | n/a     |   yes    |
-| duration      | n/a                                                | `string` | n/a     |   yes    |
-| group_arn     | Contains a tagging map for instances               | `string` | `""`    |    no    |
-| package_arns  | n/a                                                | `list`   | n/a     |   yes    |
-| rule          | Event rule details                                 | `any`    | n/a     |   yes    |
-| target_name   | Assessment target name                             | `string` | n/a     |   yes    |
-| template_name | Templates name                                     | `string` | n/a     |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| duration | n/a | `string` | n/a | yes |
+| group\_arn | Contains a tagging map for instances | `string` | `""` | no |
+| package\_arns | n/a | `list` | n/a | yes |
+| rule | Event rule details | `any` | n/a | yes |
+| target\_name | Assessment target name | `string` | n/a | yes |
+| template\_name | Templates name | `string` | n/a | yes |
 
 ## Outputs
 
-| Name     | Description |
-| -------- | ----------- |
-| rule     | n/a         |
-| target   | n/a         |
-| template | n/a         |
+| Name | Description |
+|------|-------------|
+| rule | n/a |
+| target | n/a |
+| template | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
