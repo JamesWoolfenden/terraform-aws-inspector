@@ -46,10 +46,10 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | duration | n/a | `string` | n/a | yes |
 | group\_arn | Contains a tagging map for instances | `string` | `""` | no |
-| package\_arns | n/a | `list` | n/a | yes |
+| package\_arns | n/a | `list(any)` | n/a | yes |
 | rule | Event rule details | `any` | n/a | yes |
 | target\_name | Assessment target name | `string` | n/a | yes |
 | template\_name | Templates name | `string` | n/a | yes |

@@ -3,7 +3,7 @@ resource "aws_inspector_resource_group" "group" {
 }
 
 variable "group_tag" {
-  type = map
+  type = map(any)
   default = {
     Name = "foo"
     Env  = "bar"

@@ -1,6 +1,6 @@
 variable "common_tags" {
   description = "This is to help you add tags to your cloud objects"
-  type        = map
+  type        = map(any)
 }
 
 variable "group_arn" {
@@ -28,5 +28,5 @@ variable "duration" {
 }
 
 variable "package_arns" {
-  type = list
+  type = list(any)
 }
