@@ -48,6 +48,20 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_cloudwatch_event_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) |
+| [aws_cloudwatch_event_target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) |
+| [aws_iam_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_role) |
+| [aws_inspector_assessment_target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_target) |
+| [aws_inspector_assessment_template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_template) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -67,7 +81,6 @@ No requirements.
 | rule | n/a |
 | target | n/a |
 | template | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
