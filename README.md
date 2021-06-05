@@ -46,41 +46,41 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_cloudwatch_event_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) |
-| [aws_cloudwatch_event_target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) |
-| [aws_iam_role](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_role) |
-| [aws_inspector_assessment_target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_target) |
-| [aws_inspector_assessment_template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_template) |
+| Name | Type |
+|------|------|
+| [aws_cloudwatch_event_rule.inspector](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
+| [aws_cloudwatch_event_target.inspect](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
+| [aws_inspector_assessment_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_target) | resource |
+| [aws_inspector_assessment_template.template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_template) | resource |
+| [aws_iam_role.inspector](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_role) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| duration | n/a | `string` | n/a | yes |
-| group\_arn | Contains a tagging map for instances | `string` | `""` | no |
-| package\_arns | n/a | `list(any)` | n/a | yes |
-| rule | Event rule details | `any` | n/a | yes |
-| target\_name | Assessment target name | `string` | n/a | yes |
-| template\_name | Templates name | `string` | n/a | yes |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_duration"></a> [duration](#input\_duration) | n/a | `string` | n/a | yes |
+| <a name="input_group_arn"></a> [group\_arn](#input\_group\_arn) | Contains a tagging map for instances | `string` | `""` | no |
+| <a name="input_package_arns"></a> [package\_arns](#input\_package\_arns) | n/a | `list(any)` | n/a | yes |
+| <a name="input_rule"></a> [rule](#input\_rule) | Event rule details | `any` | n/a | yes |
+| <a name="input_target_name"></a> [target\_name](#input\_target\_name) | Assessment target name | `string` | n/a | yes |
+| <a name="input_template_name"></a> [template\_name](#input\_template\_name) | Templates name | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| rule | n/a |
-| target | n/a |
-| template | n/a |
+| <a name="output_rule"></a> [rule](#output\_rule) | n/a |
+| <a name="output_target"></a> [target](#output\_target) | n/a |
+| <a name="output_template"></a> [template](#output\_template) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
