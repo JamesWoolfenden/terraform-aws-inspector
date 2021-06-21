@@ -60,15 +60,14 @@ No modules.
 | [aws_cloudwatch_event_target.inspect](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
 | [aws_inspector_assessment_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_target) | resource |
 | [aws_inspector_assessment_template.template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_template) | resource |
-| [aws_iam_role.inspector](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_role) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_duration"></a> [duration](#input\_duration) | n/a | `string` | n/a | yes |
 | <a name="input_group_arn"></a> [group\_arn](#input\_group\_arn) | Contains a tagging map for instances | `string` | `""` | no |
+| <a name="input_inspector_role"></a> [inspector\_role](#input\_inspector\_role) | n/a | `any` | n/a | yes |
 | <a name="input_package_arns"></a> [package\_arns](#input\_package\_arns) | n/a | `list(any)` | n/a | yes |
 | <a name="input_rule"></a> [rule](#input\_rule) | Event rule details | `any` | n/a | yes |
 | <a name="input_target_name"></a> [target\_name](#input\_target\_name) | Assessment target name | `string` | n/a | yes |
