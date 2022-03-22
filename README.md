@@ -38,16 +38,15 @@ module "inspector" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name                                             | Version |
-| ------------------------------------------------ | ------- |
-| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
@@ -55,33 +54,32 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                                                                    | Type     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| [aws_cloudwatch_event_rule.inspector](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule)                | resource |
-| [aws_cloudwatch_event_target.inspect](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target)              | resource |
-| [aws_inspector_assessment_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_target)       | resource |
+| Name | Type |
+|------|------|
+| [aws_cloudwatch_event_rule.inspector](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_rule) | resource |
+| [aws_cloudwatch_event_target.inspect](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_event_target) | resource |
+| [aws_inspector_assessment_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_target) | resource |
 | [aws_inspector_assessment_template.template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/inspector_assessment_template) | resource |
 
 ## Inputs
 
-| Name                                                                        | Description                          | Type        | Default | Required |
-| --------------------------------------------------------------------------- | ------------------------------------ | ----------- | ------- | :------: |
-| <a name="input_duration"></a> [duration](#input_duration)                   | n/a                                  | `string`    | n/a     |   yes    |
-| <a name="input_group_arn"></a> [group_arn](#input_group_arn)                | Contains a tagging map for instances | `string`    | `""`    |    no    |
-| <a name="input_inspector_role"></a> [inspector_role](#input_inspector_role) | n/a                                  | `any`       | n/a     |   yes    |
-| <a name="input_package_arns"></a> [package_arns](#input_package_arns)       | n/a                                  | `list(any)` | n/a     |   yes    |
-| <a name="input_rule"></a> [rule](#input_rule)                               | Event rule details                   | `any`       | n/a     |   yes    |
-| <a name="input_target_name"></a> [target_name](#input_target_name)          | Assessment target name               | `string`    | n/a     |   yes    |
-| <a name="input_template_name"></a> [template_name](#input_template_name)    | Templates name                       | `string`    | n/a     |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_duration"></a> [duration](#input\_duration) | n/a | `string` | n/a | yes |
+| <a name="input_group_arn"></a> [group\_arn](#input\_group\_arn) | Contains a tagging map for instances | `string` | `""` | no |
+| <a name="input_inspector_role"></a> [inspector\_role](#input\_inspector\_role) | n/a | `any` | n/a | yes |
+| <a name="input_package_arns"></a> [package\_arns](#input\_package\_arns) | n/a | `list(any)` | n/a | yes |
+| <a name="input_rule"></a> [rule](#input\_rule) | Event rule details | `any` | n/a | yes |
+| <a name="input_target_name"></a> [target\_name](#input\_target\_name) | Assessment target name | `string` | n/a | yes |
+| <a name="input_template_name"></a> [template\_name](#input\_template\_name) | Templates name | `string` | n/a | yes |
 
 ## Outputs
 
-| Name                                                        | Description |
-| ----------------------------------------------------------- | ----------- |
-| <a name="output_rule"></a> [rule](#output_rule)             | n/a         |
-| <a name="output_target"></a> [target](#output_target)       | n/a         |
-| <a name="output_template"></a> [template](#output_template) | n/a         |
-
+| Name | Description |
+|------|-------------|
+| <a name="output_rule"></a> [rule](#output\_rule) | n/a |
+| <a name="output_target"></a> [target](#output\_target) | n/a |
+| <a name="output_template"></a> [template](#output\_template) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
