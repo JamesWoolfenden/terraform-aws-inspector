@@ -4,14 +4,11 @@ resource "aws_cloudwatch_event_rule" "inspector" {
   is_enabled          = var.rule["is_enabled"]
   schedule_expression = var.rule["schedule_expression"]
 }
-
 resource "aws_cloudwatch_event_target" "inspect" {
   rule      = aws_cloudwatch_event_rule.inspector.name
   target_id = "Amazon_Inspector_Assess"
   arn       = aws_inspector_assessment_template.template.arn
   role_arn  = var.inspector_role.arn
 }
-
-
 variable "inspector_role" {
 }

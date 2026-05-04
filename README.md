@@ -110,7 +110,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "events:PutTargets",
                 "events:RemoveTargets"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor1",
@@ -123,9 +125,12 @@ resource "aws_iam_policy" "terraform_pike" {
                 "inspector:DescribeAssessmentTargets",
                 "inspector:DescribeAssessmentTemplates",
                 "inspector:ListEventSubscriptions",
-                "inspector:ListTagsForResource"
+                "inspector:ListTagsForResource",
+                "inspector:UpdateAssessmentTarget"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
